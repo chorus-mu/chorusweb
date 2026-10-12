@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch latest release APK
     const downloadBtn = document.getElementById('download-btn');
     if (downloadBtn) {
-        fetch('https://api.github.com/repos/slice-of-fun/Chorus-Music/releases/latest')
+        fetch('https://api.github.com/repos/chorus-mu/Chorus-Music/releases/latest')
             .then(response => response.json())
             .then(data => {
                 if (data && data.assets) {
